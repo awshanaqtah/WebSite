@@ -1,20 +1,319 @@
 <!DOCTYPE html>
-<html>  
-    <head>
-           <meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Gaming Collection</title>
+      <link rel="stylesheet" href="CSS/style.css" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="games-body">
 
 
-    </head>
+    
+<header>
+  <nav>
+    <ul>
+      <li><a href="About-Us.html" target="_blank">About us </a></li>
+      <li><a href="Sign in.html" target="_blank">Sign In</a></li>
+      <li><a href="index.html" target="_blank">Home</a></li>
+      <li><a href="news page.html" target="_blank">News</a></li>
+    </ul>
+  </nav>
+</header>
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+    
+    <a href="#" class="back-to-top">↑</a>
 
-    <body>
-            <header>
-                <nav>
-                    <ul>
-                        
-                    </ul>
-                </nav>
-            </header>
-    </body>
+    <div class="container">
+        <div class="header">
+            <h1>Gaming Collection</h1>
+            <p>Discover Amazing Games Across All Platforms</p>
+        </div>
+
+        <div class="game-grid">
+            <!-- Tetris -->
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="Assets/TT.png" alt="Tetris Game">
+                    <div class="missing-img-notice">Note: Make sure Assets/TT.png exists</div>
+                </div>
+                <div class="game-info">
+                    <h2 class="game-title">Tetris</h2>
+                    <div class="game-details">
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Genre:</span>
+                            <span class="detail-value">Puzzle</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Platform:</span>
+                            <span class="detail-value">Arcade, PC, Mobile</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Developer:</span>
+                            <span class="detail-value">Alexey Pajitnov</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Publisher:</span>
+                            <span class="detail-value">Various</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Mode:</span>
+                            <span class="detail-value">Single-player</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Rating:</span>
+                            <span class="detail-value">ESRB E (Everyone)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Released:</span>
+                            <span class="detail-value">1984</span>
+                        </div>
+                    </div>
+                    <div class="game-description">
+                        A timeless and globally recognized puzzle game that continues to challenge players with its deceptively simple yet infinitely complex block-dropping mechanics.
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Legend of Zelda -->
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="Assets/Zelda.png" alt="The Legend of Zelda">
+                    <div class="missing-img-notice">Note: Make sure Assets/Zelda.png exists</div>
+                </div>
+                <div class="game-info">
+                    <h2 class="game-title">The Legend of Zelda</h2>
+                    <div class="game-details">
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Genre:</span>
+                            <span class="detail-value">Adventure</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Platform:</span>
+                            <span class="detail-value">Nintendo Switch</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Developer:</span>
+                            <span class="detail-value">Nintendo</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Publisher:</span>
+                            <span class="detail-value">Nintendo</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Mode:</span>
+                            <span class="detail-value">Single-player</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Rating:</span>
+                            <span class="detail-value">PEGI 12</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Released:</span>
+                            <span class="detail-value">2017</span>
+                        </div>
+                    </div>
+                    <div class="game-description">
+                        The iconic action-adventure video game series created by Nintendo. Follow the journey of the hero Link as he battles to save the land of Hyrule from the clutches of the evil Ganondorf. A groundbreaking open-world action-adventure game celebrated for its unprecedented freedom, intricate environmental puzzles, and rich, immersive narrative. It redefined expectations for the genre.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grand Theft Auto VI -->
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="Assets/GTA.png" alt="Grand Theft Auto VI">
+                    <div class="missing-img-notice">Note: Make sure Assets/GTA.png exists</div>
+                </div>
+                <div class="game-info">
+                    <h2 class="game-title">Grand Theft Auto VI (GTA 6)</h2>
+                    <div class="game-details">
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Genre:</span>
+                            <span class="detail-value">Action-Adventure</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Platforms:</span>
+                            <span class="detail-value">PlayStation 5, Xbox Series X|S</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Developer:</span>
+                            <span class="detail-value">Rockstar Games</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Publisher:</span>
+                            <span class="detail-value">Rockstar Games</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Release Date:</span>
+                            <span class="detail-value">May 26, 2026</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Game Modes:</span>
+                            <span class="detail-value">Single-player, Multiplayer (Online)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Rating:</span>
+                            <span class="detail-value">Pending (likely ESRB M for Mature)</span>
+                        </div>
+                    </div>
+                    <div class="game-description">
+                        Grand Theft Auto VI is set in the fictional U.S. state of Leonida, inspired by Florida, featuring the neon-soaked metropolis of Vice City. The game follows the story of Jason Duval and Lucia Romagna, a romantic criminal duo. Players can freely roam the open world, engaging in various missions and activities. The game promises a robust 75-hour storyline, the longest in the series' history, and introduces innovative gameplay features to enhance the player experience.
+                    </div>
+                </div>
+            </div>
+
+            <!-- EA Sports FC 24 -->
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="Assets/FiFA 25.png" alt="FiFA FC 25">
+                    <div class="missing-img-notice">Note: Make sure Assets/FiFA 25.png exists</div>
+                </div>
+                <div class="game-info">
+                    <h2 class="game-title">EA SPORTS FC 24 (formerly FIFA 24)</h2>
+                    <div class="game-details">
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Genre:</span>
+                            <span class="detail-value">Sports (Football/Soccer)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Platforms:</span>
+                            <span class="detail-value">PS4, PS5, Xbox One, Xbox Series X|S, Nintendo Switch, PC</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Developer:</span>
+                            <span class="detail-value">EA Sports</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Publisher:</span>
+                            <span class="detail-value">Electronic Arts</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Release Date:</span>
+                            <span class="detail-value">September 29, 2023</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Game Modes:</span>
+                            <span class="detail-value">Single-player, Multiplayer, Co-op, Ultimate Team, MyCAREER, Clubs, VOLTA Football</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Rating:</span>
+                            <span class="detail-value">ESRB E (Everyone)</span>
+                        </div>
+                    </div>
+                    <div class="game-description">
+                        EA SPORTS FC 24 marks the beginning of a new era for football gaming. With over 19,000 fully licensed players, 700 teams, and 30 leagues—including the UEFA Men's and Women's Champions League—it offers unparalleled authenticity. The game introduces three cutting-edge technologies: HyperMotionV, PlayStyles optimized by Opta, and the enhanced Frostbite™ Engine, delivering lifelike detail and immersive gameplay. A post-launch update at no additional cost brings the excitement of UEFA EURO 2024 to the game.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call of Duty: Modern Warfare II -->
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="Assets/ModernWarFare.png" alt="Call Of Duty Modern warfare 2">
+                    <div class="missing-img-notice">Note: Make sure Assets/ModernWarFare.png exists</div>
+                </div>
+                <div class="game-info">
+                    <h2 class="game-title">Call of Duty: Modern Warfare II</h2>
+                    <div class="game-details">
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Genre:</span>
+                            <span class="detail-value">First-person Shooter</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Platforms:</span>
+                            <span class="detail-value">PS4, PS5, Xbox One, Xbox Series X|S, PC</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Developer:</span>
+                            <span class="detail-value">Infinity Ward</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Publisher:</span>
+                            <span class="detail-value">Activision</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Release Date:</span>
+                            <span class="detail-value">October 28, 2022</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Game Modes:</span>
+                            <span class="detail-value">Single-player, Multiplayer</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="bullet-point">•</span>
+                            <span class="detail-label">Rating:</span>
+                            <span class="detail-value">ESRB M (Mature)</span>
+                        </div>
+                    </div>
+                    <div class="game-description">
+                        Call of Duty: Modern Warfare II is a first-person shooter game developed by Infinity Ward and published by Activision. It is a direct sequel to the 2019 reboot, and continues the story of Task Force 141 as they face a new threat. The game features both a single-player campaign and multiplayer modes.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Scroll progress indicator
+        window.onscroll = function() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("scrollProgress").style.width = scrolled + "%";
+            
+            // Show/hide back to top button
+            const backToTop = document.querySelector('.back-to-top');
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        };
+    </script>
+</body>
 </html>
