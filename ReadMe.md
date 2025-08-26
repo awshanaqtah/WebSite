@@ -1,0 +1,1 @@
+This is a Website Project + Knowledge Reasoning and Prestentation  its About Creating an Ontoloy Domain that help  you Know how the Computer Logic Works +and help computer Make Right Choices
