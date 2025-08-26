@@ -8,12 +8,12 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #1a1b3a 0%, #2d2e5f 100%); /* page background */
+      background: linear-gradient(135deg, #1a1b3a 0%, #2d2e5f 100%); 
       color: #e0e0e0;
     }
 
     header {
-      background: rgba(0,0,0,0.3); /* transparent over gradient */
+      background: rgba(0,0,0,0.3);
       padding: 15px 0;
       box-shadow: 0 0 15px rgba(33,150,243,0.5);
     }
@@ -46,10 +46,10 @@
       max-width: 800px;
       margin: 40px auto;
       padding: 20px;
-      background: linear-gradient(135deg, #1a1b3a 0%, #2d2e5f 100%); /* content gradient */
+      background: linear-gradient(135deg, #1a1b3a 0%, #2d2e5f 100%); 
       border-radius: 12px;
       box-shadow: 0 0 25px rgba(106,27,154,0.6), 
-                  0 0 40px rgba(33,150,243,0.5); /* purple+blue glow */
+                  0 0 40px rgba(33,150,243,0.5); 
     }
 
     h1 {
@@ -63,6 +63,46 @@
       line-height: 1.6;
       text-shadow: 0 0 5px rgba(33,150,243,0.3);
     }
+
+    /* Cards */
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 cards side by side */
+      gap: 20px;
+      max-width: 1400px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: #2d2e5f;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(33,150,243,0.5);
+    }
+
+    .card h2 {
+      color: #ffc52f;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    #progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #007bff;
+  width: 0%;
+  z-index: 1000;
+}
   </style>
 </head>
 <body>
@@ -73,13 +113,68 @@
         <li><a href="Games.html" target="_blank">Games</a></li>
         <li><a href="Sign in.html" target="_blank">Sign In</a></li>
         <li><a href="About-Us.html" target="_blank">About Us</a></li>
+        <li><a href="news page.html" target="_blank"> News</a></li>
       </ul>
     </nav>
   </header>
 
   <div class="content">
- 
-   
+    <h1>Video Game Ontology Domains</h1>
   </div>
+
+  <div class="cards-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <h2>Game Genres</h2>
+      <p>
+        Categories that define the style and type of a video game.<br>
+        Genres range from Action, RPG, Puzzle, Simulation, to Sports.<br>
+        They help players quickly understand gameplay expectations.<br>
+        Genres provide the foundation for narrative, mechanics, and pacing.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <h2>Platforms</h2>
+      <p>
+        The hardware or system where games are played,<br>
+        including PC, Console, Mobile, and Virtual Reality.<br>
+        Platform choice impacts controls, graphics, and performance.<br>
+        Exclusive games often define platform popularity. 
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <h2>Developers & Publishers</h2>
+      <p>
+        Core stakeholders in the gaming industry.<br>
+        Developers design and create the game’s mechanics, art, and code.<br>
+        Publishers handle marketing, funding, and distribution.<br>
+        Together, they ensure both creativity and commercial success.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <h2>Player Interaction</h2>
+      <p>
+        How players engage with games.<br>
+        This includes single-player, multiplayer, or co-op modes.<br>
+        Interactions involve mechanics like exploration, crafting, or combat.<br>
+        The balance of challenge and reward shapes the overall experience.
+      </p>
+    </div>
+  </div>
+
 </body>
+
+<script>
+  window.onscroll = function() {
+  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolled = (window.scrollY / scrollHeight) * 100;
+  document.getElementById("progressBar").style.width = scrolled + "%";
+};
+</script>
 </html>
